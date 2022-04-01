@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* https://source.unsplash.com/collection/190727/1600x900 */
+header::before {
+    background: url('https://source.unsplash.com/collection/190727/1600x900')no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* bottom: 50px; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* header {
+    width: 100vw;
+    height: 120vh;
+    background: url('tajjjmahal.jpg');
+    /* opacity: 0.3; */
+/* background-repeat: no-repeat;
+    background-size: cover;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+    overflow: hidden;
+
+} */
+
+/* Poori nav bar wali line aaegi isme */
+nav {
+    height: 14vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    /* border-radius: 10px; */
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+    margin-right: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; 
+    /* z-index: -1; */
+
+}
+
+/* Mera bharat aaega isme */
+nav .logo {
+     width: 21%; 
+    margin-left: 18px;
+     letter-spacing: 1.9px; 
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Home About Gallery Contact */
+.menu_tag a {
+    height: 15vh;
+    width: 5%;
+    padding-bottom: 41px;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0 20px;
+    /* font-weight: bold; */
+    font-size: 13.6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.menu_tag a:hover {
+    color: red;
+    /* font-size:15px ; */
+    /* transition: all 0.3s ease-out; */
+    /* border: 2px solid red; */
+}
+
+.logo h1:hover {
+
+    color: black;
+    
+}
+
+main {
+    height: 86vh;
+    width: 100%;
+    /* margin-bottom: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* main section{
+    color: black;
+    font-size: larger;
+
+} */
+section h3 {
+    font-size: 56px;
+    color: rgb(131, 96, 30);
+
+    /* font-weight: bolder; */
+    letter-spacing: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 4px black;
+}
+
+main section h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin: 17px 0 20px 0;
+    /* color: white; */
+}
+
+section p {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 3px black;
+}
+
+section a {
+    /* height: 30%;
+    width: 160px; */
+    padding: 12px 23px;
+    text-transform: uppercase;
+    margin: 0 13px 0 0;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    /* color: rgb(0, 0, 0); */
+    font-weight: 700;
+    /* background-color: turquoise; */
+    box-shadow: 2px 2px 4px black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+
+}
+
+section .btn1 {
+    background-color: white;
+    color: #000;
+    letter-spacing: 4px;
+
+}
+
+section .btn2 {
+    background-color: #00b894;
+    color: #000;
+    padding-right: 40px;
+    letter-spacing: 5px;
+
+
+}
+.change_content::after{
+    content: "";
+    color: #00b894;
+    animation: kuchbi 10s infinite linear;
+}
+@keyframes kuchbi {
+    0%{content: "DELHI";}
+    20%{content: "MUMBAI";}
+    40%{content: "JAIPUR";}
+    70%{content: "AGRA";}
+    100%{content: "KERALA";}
+}
+.saif::after{
+    content: "Welcome To India";
+    animation: suar 3s infinite linear;
+}
+@keyframes suar{
+0%{color: yellow;}
+30%{color: slateblue;}
+70%{color: darkgoldenrod;}
+100%{color: fuchsia;}
+}
+
+.btn1:hover{
+    background-color: #00b894;
+}
+.btn2:hover{
+    background-color: #fff;
+}
